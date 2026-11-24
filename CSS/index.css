@@ -138,3 +138,68 @@ footer a {
   box-shadow: 0 0.35rem 1rem #14372c26;
   display: block;
 }
+
+/* Phone layout before either breakpoint applies. */
+.page-index nav ul {
+  gap: 0.25rem 0.35rem;
+}
+
+.page-index main {
+  width: 94%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.page-index main h1 {
+  font-size: 1.5rem;
+}
+
+.page-index main dl {
+  padding: 0.75rem 1rem;
+}
+
+.page-index main dd {
+  margin-left: 0.75rem;
+}
+
+/* Give the navigation and content more space on tablets. */
+@media (min-width: 40em) {
+  .page-index nav ul {
+    gap: 0.5rem 1rem;
+  }
+
+  .page-index main {
+    width: 90%;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .page-index main h1 {
+    font-size: 1.85rem;
+  }
+
+  .page-index main dl {
+    padding: 1rem 1.35rem;
+  }
+}
+
+/* Restore the wider spacing on desktop. */
+@media (min-width: 64em) {
+  .page-index nav ul {
+    gap: 0.5rem 1.4rem;
+  }
+
+  .page-index main {
+    width: 88%;
+    margin-top: 2rem;
+    padding: 2.1rem;
+  }
+
+  .page-index main h1 {
+    font-size: 2.1rem;
+  }
+
+  .page-index main dl {
+    padding: 1.3rem 1.7rem;
+  }
+}

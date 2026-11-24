@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Google Map | Caleb Ryan</title>
+    <link href="CSS/map.css" rel="stylesheet">
+    <script src="JS/script.js" defer></script>
+  </head>
+  <body class="page-map">
+    <header>
+      <h1><strong>Navigation:</strong></h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Intro/Main</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="aspiration.html">Aspirations</a></li>
+          <li><a href="map.html" aria-current="page">Google Map</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Illinois Tech Campus Map</h1>
+      <p>Select the campus marker to learn about Illinois Tech. Use Reset view to return to campus after exploring.</p>
+      <div id="campus-map" data-maps-key="AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI" role="region" aria-label="Interactive map of Illinois Tech's Mies Campus">
+        <p id="map-status" role="status">Loading Google Maps…</p>
+      </div>
+      <div class="map-actions">
+        <button id="reset-map" type="button" disabled>Reset view</button>
+        <button id="questions" type="button">Questions</button>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Illinois+Institute+of+Technology+Chicago">Open in Google Maps</a>
+      </div>
+    </main>
+    <footer>
+      <h2>Contact:</h2>
+      <a href="mailto:cryan14@hawk.illinoistech.edu">Email</a>
+    </footer>
+  </body>
+</html>
